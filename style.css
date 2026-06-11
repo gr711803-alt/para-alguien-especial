@@ -54,7 +54,7 @@ body {
     height: 70px;
 }
 
-/* Contenedor absoluto del follaje */
+/* Contenedor del Follaje */
 .heart-foliage {
     position: absolute;
     bottom: 55px;
@@ -64,7 +64,7 @@ body {
     height: 180px;
 }
 
-/* Estructura Base del Corazón en CSS */
+/* Estructura Base de los Corazones */
 .heart {
     position: absolute;
     width: 10px;
@@ -117,7 +117,7 @@ body {
     font-weight: 700;
 }
 
-/* Ventana de Código Moderna */
+/* Ventana de Código Estilo VS Code */
 .code-window {
     background-color: #16161A;
     border-radius: 16px;
@@ -154,7 +154,7 @@ body {
 .code-content { padding: 15px; color: #A9B2C3; text-align: left; line-height: 1.5; }
 .code-content pre { margin: 0; }
 
-/* Colores de Sintaxis del Editor */
+/* Colores del Resaltado de Sintaxis */
 .selector { color: #f97316; }
 .property { color: #38bdf8; }
 .number { color: #a3e635; }
@@ -162,7 +162,7 @@ body {
 .keyword { color: #818cf8; }
 .comment { color: #6a737d; font-style: italic; }
 
-/* Animación elástica para los corazones */
+/* Animación elástica de brote */
 @keyframes popHeart {
     0% {
         opacity: 0;

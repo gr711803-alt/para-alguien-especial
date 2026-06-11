@@ -1,4 +1,4 @@
-// Fecha exacta configurada: 3 de Junio de 2026
+
 const fechaInicio = new Date(2026, 5, 3, 0, 0, 0); 
 
 const mensajes = [
@@ -45,12 +45,10 @@ function actualizarContador() {
         `<span>${dias}</span> DÍAS, <span>${horas}</span> HORAS, <span>${minutos}</span> MINUTOS, <span>${segundos}</span> SEGUNDOS`;
 }
 
-// Algoritmo para esparcir los 180 corazones en forma de copa frondosa
+// Algoritmo matemático para la copa frondosa de corazones pastel
 function crearFollaje() {
     const follaje = document.getElementById("foliage");
-    // Colores pastel idénticos al video original
     const colores = ['#FFC6FF', '#FFADAD', '#FDFFB6', '#CAFFBF', '#9BF6FF', '#A0C4FF', '#FFD6A5'];
-    
     const totalCorazones = 180; 
 
     for (let i = 0; i < totalCorazones; i++) {
@@ -58,25 +56,20 @@ function crearFollaje() {
         corazon.classList.add("heart");
 
         const angulo = Math.random() * Math.PI * 2;
-        
-        // Dispersión balanceada
         const radioX = Math.pow(Math.random(), 0.7) * 75;
         const radioY = Math.pow(Math.random(), 0.7) * 70;
 
-        // Coordenadas calculadas
         const xValue = 100 + radioX * Math.cos(angulo);
         const yValue = 80 + radioY * Math.sin(angulo) - (Math.abs(radioX * Math.cos(angulo)) * 0.2); 
 
         const escala = 0.5 + Math.random() * 0.7;
         const colorAzar = colores[Math.floor(Math.random() * colores.length)];
 
-        // Inyección de variables al CSS
         corazon.style.setProperty('--x', `${xValue}px`);
         corazon.style.setProperty('--y', `${yValue}px`);
         corazon.style.setProperty('--scale', escala);
         corazon.style.backgroundColor = colorAzar;
 
-        // Efecto elástico al brotar
         corazon.style.animation = 'popHeart 1s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards';
         corazon.style.animationDelay = `${Math.random() * 2}s`;
 
